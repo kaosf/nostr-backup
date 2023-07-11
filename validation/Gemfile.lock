@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bip-schnorr (0.6.0)
+      ecdsa_ext (~> 0.5.0)
+    ecdsa (1.2.0)
+    ecdsa_ext (0.5.0)
+      ecdsa (~> 1.2.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  bip-schnorr (= 0.6.0)
+
+BUNDLED WITH
+   2.4.13

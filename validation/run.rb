@@ -16,3 +16,13 @@ p Digest::SHA256.hexdigest(serialized.to_json) == event[:id]
 #=> true
 p event[:id] == id
 #=> true
+
+npub = "a6f1f450080b65ba75da8ac7328f91c94f8314b2cc4aa719c516852a29388f0b"
+sig = "9304be53d6ffec205f304c6d340a172e557dd58e306348867641b1b6e5877d1aeec1c6e52dc7a467b8cdfc9d5427f21ae53a7966d67be249440ae758a97acf22"
+public_key = [npub].pack("H*")
+signature = [sig].pack("H*")
+message = [id].pack("H*")
+require "schnorr"
+p Schnorr.valid_sig?(message, public_key, signature)
+#=> true
+# ref. https://github.com/chaintope/bip-schnorrrb
