@@ -1,3 +1,6 @@
 source "https://rubygems.org"
 
 gem "bip-schnorr", "0.6.0"
+# Keep depencencies versions
+gem "ecdsa", "1.2.0"
+gem "ecdsa_ext", "0.5.0"
