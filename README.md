@@ -1,5 +1,7 @@
 # [Experimental Project] ka's Nostr Backup
 
+**UPDATE info**: I'm using [nosdump-and-store](https://github.com/kaosf/nosdump-and-store) for creating backups now.
+
 ## Initialization note
 
 ```sh
